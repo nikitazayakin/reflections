@@ -1,0 +1,80 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    - I could saw all changed lines in file, this narrowed my search place.
+    - Now i only need to search for the bug in these changed lines.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    - You can see all the changes you made spanned in timeline.
+    - You can compare different versions, analyze changes between them.
+    - If you removed some functionality, you can get it back from older version.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    + commits can be logically structured, so there will probably be one commit
+      per each logical change.
+    - you have to commit every change manually, in google docs, all changes are 
+    stored automatically.
+    - manually not commited changes can be lost.
+
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    + Because Git, was intentionally made for programmers, where one logical
+      change can affects several files in a repository
+    + Google Doc, saves all the changes, right after you make changes to the 
+      document. Every document is treated separately, from others. There is 
+      no concept like Repository in Google Docs.
+
+How can you use the commands git log and git diff to view the history of files?
+
+    + By git log we see ids, message, date and authors of each commit and we also
+      can watch some statistics by using --stat flag.
+    + By git diff we can view difference between two specific 
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    + Revert to previous version of code. So you don't lose a state
+    + Compare current version to previous to see what exact changes 
+      were made to code.
+    + Able to explore pretty significant changes in the code base.
+    + Architecture differences at a very low level without fear of breaking the entire project.
+    + with VC you are able to rethink the entire code base, or parts of it without
+      fear to break them.
+    + idea of exploration is really great about VC. so with VC you can explore code
+      more easily and deeply.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    + for learning programming
+    + comparing different versions of file
+    + comparing snapshots of reporsitory
+    + monitoring changes to repository from commit to commit.
+
+=======================================
+git commands
+=======================================
+Compare two commits, printing each line that is present in one commit but not the other.
+
+  git diff will do this. It takes two arguments - the two commit ids to compare. 
+
+
+Make a copy of an entire Git repository, including the history, onto your own computer.
+
+  git clone will do this. It takes one argument - the url of the repository to copy. 
+
+
+Temporarily reset all files in a directory to their state at the time of a specific commit.
+
+  git checkout will do this. It takes one argument - the commit ID to restore. 
+
+
+Show the commits made in this repository, starting with the most recent.
+
+  git log will do this. It doesn't take any arguments.
