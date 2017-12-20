@@ -19,8 +19,21 @@ What value do you think it offers?
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+  + I add only files related to my logical change to the staging area.
+    Than i commit, and all files in staging area are commited to repository.
+  + If i have another commit for another logical change to go, then i repeat
+    All steps above again, and commit next logical change.
+
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
+
+  + When you add experimental feature to project, that you don't want to be
+    on master branch, you then create a new branch, check it out and experiment
+    in it. Then you commit it. And it's separated. Later when you want to add
+    it to prod, you merge this branch and master branch.
+  + when you have several production versions, and you still don't have them
+    as in option in configurations. So at the start you may want to keep them
+    in different branches of repository.
 
 How do the diagrams help you visualize the branch structure?
 
@@ -30,3 +43,34 @@ the diagram the way we do?
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
 
+
+==================================================
+Example Commit Message
+==================================================
+feat: Summarize changes in around 50 characters or less
+
+More detailed explanatory text, if necessary. Wrap it to about 72
+characters or so. In some contexts, the first line is treated as the
+subject of the commit and the rest of the text as the body. The
+blank line separating the summary from the body is critical (unless
+you omit the body entirely); various tools like log, shortlog
+and rebase can get confused if you run the two together.
+
+Explain the problem that this commit is solving. Focus on why you
+are making this change as opposed to how (the code explains that).
+Are there side effects or other unintuitive consequenses of this
+change? Here's the place to explain them.
+
+Further paragraphs come after blank lines.
+
+ - Bullet points are okay, too
+
+ - Typically a hyphen or asterisk is used for the bullet, preceded
+   by a single space, with blank lines in between, but conventions
+   vary here
+
+If you use an issue tracker, put references to them at the bottom,
+like this:
+
+Resolves: #123
+See also: #456, #789
