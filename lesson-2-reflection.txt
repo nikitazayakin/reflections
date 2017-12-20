@@ -37,8 +37,15 @@ organized? How would branches help?
 
 How do the diagrams help you visualize the branch structure?
 
+  We can see several branches, the parent node for a branch,
+  and from where every branch started. It could start from 
+  the beginning of repository, or from some commit of other
+  branch.
+
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+
+  
 
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
