@@ -8,6 +8,18 @@ stay up-to-date with your remote repository?
   don't want to solve those conflicts but finish your feature first.
   This way you can keep focus and decide when you want to get the latest versions and 
   integrate changes.
+
+Describe the differences between forks, clones, and branches. When would you use one 
+instead of another?
+  Forking means making a copy of smb's repository directly on github servers. Cloning
+  means making a copy of a repository to local computer. Branching is process of working on
+  some feature or bug separately, leaving master code intact.
+  Fork is used when you don't have access to repository, but want to work on it and make 
+  changes. It's also easy to make pull request to the original repository.
+  If you want to work on a code offline on you computer, with some IDE maybe, then you
+  use clone.
+  If you wark on a new feature, or fix a bug, then you make a branch and commit changes
+  there.
   
 Commands:
   
