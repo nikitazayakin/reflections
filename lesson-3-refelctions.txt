@@ -1,8 +1,8 @@
 When would you want to create a remote repository rather than keeping all your work local?
   When collaborating with other users it's easier to share updates by using a remote repository. This way others can contribute, and get changes too.
   
-  Commands:
+Commands:
   
-  git remote  |    Show all remote locations for the repository
-  git remote -v |  Show urls of remote locations
-  git push origin master | Push new commits in master branch to origin remote
+git remote  |    Show all remote locations for the repository
+git remote -v |  Show urls of remote locations
+git push origin master | Push new commits in master branch to origin remote
