@@ -22,9 +22,9 @@ instead of another?
   there.
 
 What is the benefit of having a copy of the last known state of the remote stored locally?
-  If there are changes to remote, and you local simultaneously, then you have to merge them.
-  This could cause to lead to merge conflicts, you will have to spend time to resolve them.
-  If you have last remote state, you will not have to merge changes you got into yours.
+  You can work offline, it saves a lot of data overhead when pushing changes to github 
+  and it gives the possibility to do a quick check which changes are made in the online 
+  repo compared to the offline repository.
   
 Commands:
   
