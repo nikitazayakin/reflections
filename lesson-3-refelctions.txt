@@ -23,11 +23,15 @@ instead of another?
   
 Commands:
   
-git remote  |    Show all remote locations for the repository
-git remote -v |  Show urls of remote locations
-git remote add origin url |   Add a new remote location for the repository. Origin is 
+git remote  |  Show all remote locations for the repository
+git remote -v  |  Show urls of remote locations
+git remote add origin url  |  Add a new remote location for the repository. Origin is 
                               the default name to use when you create only one remote 
                               location. Url should be the https url to the github
-                              repository.
-git push origin master | Push new commits in master branch to origin remote
-git pull origin master  |    Get the master branch from the remote location origin.
+                              repository
+git push origin master |  Push new commits in master branch to origin remote
+git pull origin master  |  Get the master branch from the remote location origin
+git pull origin master  |  git fetch origin + git merge master origin/master
+git branch -a
+git fetch origin  |  download remote commits and branches to local, without merging them 
+                     with local synonims
