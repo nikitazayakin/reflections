@@ -25,6 +25,24 @@ What is the benefit of having a copy of the last known state of the remote store
   You can work offline, it saves a lot of data overhead when pushing changes to github 
   and it gives the possibility to do a quick check which changes are made in the online 
   repo compared to the offline repository.
+
+How would you collaborate without using Git or GitHub? What would be easier, and what 
+would be harder?
+  Harder collaboration, I would have to send project with changes to each other after 
+  each change. I'm loosing project changes. It's harger to combine work of multiple 
+  people this way.
+  The only think I can think of that is easier without using Git is that you don't need 
+  to learn how Git works, and other techniques are simpler.
+
+When would you want to make changes in a separate branch rather than directly in master? 
+What benefits does each approach have?
+  When i make change in a separate branch, i leave main code unchanged, so several people
+  can work on different parts of the project at the same time. Also we can upload our
+  branches to GitHub and make a pull request. That way we can contribute to other
+  projects. This way we even may not have wright access rigths to the project.
+  The only benefit i can think of making changes directly in master is that it's less
+  complicated. This lets you make less operations but you can do this only if you work
+  alone on the project.
   
 Commands:
   
@@ -36,3 +54,6 @@ git remote add origin url |   Add a new remote location for the repository. Orig
                               repository.
 git push origin master | Push new commits in master branch to origin remote
 git pull origin master  |    Get the master branch from the remote location origin.
+git pull origin master  |    = Git fetch origin + git merge master origin/master
+32
+git fetch origin  |    Get the changes from the remote location into the (hidden?) origin/master branch
